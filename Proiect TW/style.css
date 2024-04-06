@@ -1,0 +1,345 @@
+
+/* !!!!!!!!!!!!!!!!!!! 
+        index.html
+ !!!!!!!!!!!!!!!!!!! */
+  body {
+    background-color: #e0e0e0;
+   
+   }
+   main{
+    padding: 20px;
+   }
+.destination-info img{
+    width: 300px;
+    border-radius: 10% 30% 
+}
+.rc {
+    padding: 40px;
+    width: 200px;
+    border-radius: 10% 30%  
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-gap: 10px;
+  }
+  
+  .flex-image {
+    flex: 0;
+    padding: 20px;
+    max-width: 200px; /* Adjust the max-width as needed */
+    border-radius: 20%;
+    
+  }
+.footer
+{
+    background-color: #333;
+}
+.footer ul
+{   
+    
+    list-style: none;
+    display: block;
+    color: white;
+    padding: 1px 20px;
+}
+.footer ul li {
+    text-align: center;
+}
+
+/* Meniu de navigare */
+.color-animation {
+    color: blue; /* Initial color */
+    animation: color-change-animation 2s infinite alternate; /* Animation */
+}
+
+@keyframes color-change-animation {
+    0% { color: rgb(119, 223, 179); }
+    50% { color: rgb(118, 175, 228); }
+    100% { color: rgb(224, 135, 135); }
+}
+f{
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+.main-nav {
+
+    background-color: #333;
+ 
+}
+
+.main-nav ul {
+   list-style: none;
+   background-color: #333;
+   
+}
+
+.main-nav ul li {
+    display: inline-block; 
+    position: relative; 
+   
+}
+
+.main-nav ul li a {
+    display: block; 
+    color: rgb(184, 216, 226);
+    padding: 25px 40px;
+    text-decoration: none; 
+  
+}
+
+/* Dropdown */
+.main-nav ul li ul.dropdown li {
+    display: block;
+}
+.main-nav ul li ul.dropdown {
+    width:100%;
+    position: absolute;
+    background-color: #164355; 
+    z-index: 999; 
+    display: none;
+    padding: 1px ;
+}
+.main-nav ul li a:hover {
+    background-color: #404b63; 
+}
+.main-nav ul li:hover ul.dropdown {
+    display: block; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    color: rgb(69, 102, 112);
+    font-size: 30px;
+    font-style: italic;
+
+}
+.center2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100%; 
+    color: rgb(69, 102, 112);
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+ x {    
+        border: 1px solid pink;
+        color: rgb(177, 120, 98);
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        font-size: 20pt;
+    }
+  
+    
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideInUp {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    from { transform: translateY(100px); }
+    to { transform: translateY(0); }
+}
+
+/* Apply animations to elements */
+
+/* Apply animations to elements */
+.animated {
+    animation-fill-mode: both;
+}
+
+/* Apply specific animations to sections with delays */
+#welcome-section.animated.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0s; /* Start immediately */
+}
+
+#featured-destination.animated.zoomIn {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s; /* Start 1 second after previous animation */
+}
+
+#latest-posts.animated.slideInUp {
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-delay: 1s; /* Start 2 seconds after previous animation */
+}
+
+.right{
+    /* Start 2 seconds after previous animation */
+}
+.left{
+    /* Start 2 seconds after previous animation */
+}
+.left.slideInUp 
+{
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+
+}
+.right.slideInUp 
+{
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+   
+}
+/* !!!!!!!!!!!!!!!!!!! 
+        pagina 1
+ !!!!!!!!!!!!!!!!!!! */
+
+
+.centrare
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    padding: 40px;
+    justify-content: center; /* Center horizontally */
+    max-width: 800px; /* Adjust max-width as needed */
+    position: relative; /* Required for absolute positioning of pseudo-element */
+  }
+  
+  .container1::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust to fit within the container */
+    left: -20px; /* Adjust to fit within the container */
+    right: -20px; /* Adjust to fit within the container */
+    bottom: -20px; /* Adjust to fit within the container */
+    background-color: #bcc0c0; /* Background color for the square */
+    border-radius: 40px; /* Border radius for the square */
+    border: 20px solid rgb(182, 186, 189); /* Border color for the square */
+    z-index: -1; /* Ensure the pseudo-element is behind grid items */
+  }
+  .container1::after {
+    content: "Bracelona"; 
+    color: rgb(104, 112, 114);
+    font-style: italic;
+    font-size: 30px;
+    font-family: cursive;
+    position: absolute;
+    margin-left: 505px;
+    margin-top: 30px;
+  }
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    padding: 40px;
+    justify-content: center; /* Center horizontally */
+    max-width: 800px; /* Adjust max-width as needed */
+    position: relative; /* Required for absolute positioning of pseudo-element */
+  }
+  
+  .container2::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust to fit within the container */
+    left: -20px; /* Adjust to fit within the container */
+    right: -20px; /* Adjust to fit within the container */
+    bottom: -20px; /* Adjust to fit within the container */
+    background-color: #bcc0c0; /* Background color for the square */
+    border-radius: 40px; /* Border radius for the square */
+    border: 20px solid rgb(182, 186, 189); /* Border color for the square */
+    z-index: -1; /* Ensure the pseudo-element is behind grid items */
+  }
+  .container2::after {
+    content: "Thassos"; 
+    color: rgb(104, 112, 114);
+    font-style: italic;
+    font-size: 30px;
+    font-family: cursive;
+    position: absolute;
+    margin-left: 505px;
+    margin-top: 30px;
+  }
+  .container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    padding: 40px;
+    justify-content: center; /* Center horizontally */
+    max-width: 800px; /* Adjust max-width as needed */
+    position: relative; /* Required for absolute positioning of pseudo-element */
+  }
+  
+  .container3::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust to fit within the container */
+    left: -20px; /* Adjust to fit within the container */
+    right: -20px; /* Adjust to fit within the container */
+    bottom: -20px; /* Adjust to fit within the container */
+    background-color: #bcc0c0; /* Background color for the square */
+    border-radius: 40px; /* Border radius for the square */
+    border: 20px solid rgb(182, 186, 189); /* Border color for the square */
+    z-index: -1; /* Ensure the pseudo-element is behind grid items */
+  }
+  .container3::after {
+    content: "Londra"; 
+    color: rgb(104, 112, 114);
+    font-style: italic;
+    font-size: 30px;
+    font-family: cursive;
+    position: absolute;
+    margin-left: 505px;
+    margin-top: 30px;
+  }
+  .column {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally within each column */
+  }
+
+  .photo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 100px;
+   border-radius: 10% 10% 10%;
+   border: 5px dotted rgb(119, 124, 128); /* border color for the square */
+  }
+  .right {
+    margin-top:30px; /* Adjust this value to control the gap between photos */
+  }
+  .containertext {
+    display: flex; /* Use flexbox to align items */
+  }
+  .text {
+    margin-left: 10px; /* Adjust the margin as needed to create space between the image and text */
+  }
+  .title {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center; /* Center align the title */
+  }
